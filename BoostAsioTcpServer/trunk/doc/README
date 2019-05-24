@@ -1,0 +1,14 @@
+#Used&Tested
+boost v1.66.0
+
+##Usage of TcpServer
+boost::asio::io_service io_service ///must be created 
+
+int main (void)
+{
+	while(1)
+	{
+		io_service.poll();	///necessary for TcpServer operation
+	}
+	
+}
